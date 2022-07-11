@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main() {
-        main(null);
+        
     }
 
 
@@ -50,11 +50,11 @@ public class Program {
         }
         return suma;
     }
-    public static Preke listoMaximumas(List<Preke> kaina) {
-        Preke laikinasMaximumas = kaina.get(0);
-        for (Preke preke: kaina) {
-            if (kaina> laikinasMaximumas) {
-                laikinasMaximumas=kaina;
+    public static double listoMaximumas(List<Preke> prekes) {
+        double laikinasMaximumas = prekes.get(0).getKaina();
+        for (Preke preke: prekes) {
+            if (preke.getKaina() > laikinasMaximumas) {
+                laikinasMaximumas=preke.getKaina();
             }
 
             }
