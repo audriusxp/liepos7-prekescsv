@@ -15,7 +15,8 @@ public class Program {
         ArrayList<Preke> prekes = nuskaitoPrekesIsFailo("prekes.csv");
 
         System.out.println("Prekiu sandelyje = " + kiekPrekiuSandelyje(prekes));
-        System.out.println("Brangiausia preke = " + listoMaximumas(prekes));
+        double max = listoMaximumas(prekes);
+        System.out.println("max = " + max);
 
 
     }
